@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Biru -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/blue"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp">
+
+        <TextView
+            android:text="Model"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Konten Scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Arsitektur Model -->
+            <TextView
+                android:text="Arsitektur Model"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Model ini merupakan Artificial Neural Network (ANN) dengan beberapa layer (lapisan). ANN dikembangkan menggunakan framework TensorFlow dan Keras. Model ini dilatih untuk memprediksi data dari dataset yang sebelumnya telah dibersihkan (cleaned dataset)."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Preprocessing -->
+            <TextView
+                android:text="Model Machine Learning\n\nPre-Processing"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="1). Data Transform"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/code1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:text="Tujuan: Mengubah label kategorikal 'M' (Malignant) dan 'B' (Benign) menjadi angka (1 dan 0) agar bisa diproses oleh model."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Metode: Menggunakan Label Encoding dari pustaka sklearn.preprocessing."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="2). Label dan Fitur"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/code2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:text="Tujuan: Memisahkan fitur (X) dan label/target (y)."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Fitur yang dipilih adalah yang berkontribusi besar dalam prediksi kanker payudara (dalam konteks ini sepertinya dataset dari Breast Cancer Wisconsin)."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <!-- Modeling -->
+            <TextView
+                android:text="Modeling"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="1). Train Data dan Standarisasi"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/code3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="12dp" />
+
+            <ImageView
+                android:src="@drawable/code3a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:text="MinMaxScaler digunakan untuk normalisasi data agar berada dalam rentang 0–1."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Data kemudian dibagi menjadi: Training set (80%) dan Testing set (20%)"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="random_state=42 memastikan replikasi pembagian data yang sama."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="2). Modeling ANN"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/code4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="12dp" />
+
+            <ImageView
+                android:src="@drawable/code4a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:text="Model ANN terdiri dari 10 neuron di input layer, dua hidden layer masing-masing 16 dan 8 neuron dengan aktivasi 'relu', serta 1 neuron di output layer dengan aktivasi 'sigmoid' untuk klasifikasi biner. Model dikompilasi dengan optimizer 'adam', loss 'binary_crossentropy', dan metrik 'accuracy'."
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="3). Plot Model"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/code5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="12dp" />
+
+            <ImageView
+                android:src="@drawable/code5a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:text="Menampilkan arsitektur visual model termasuk jumlah neuron dan bentuk layer. Model dilatih selama 50 epoch dengan batch size 16 dan Proses pelatihan mencakup juga validasi pada data uji"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Evaluaion -->
+            <TextView
+                android:text="Evaluaion"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="1). Akurasi"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/code6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:text="Model dievaluasi menggunakan data uji."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Dicetak:"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Akurasi: sejauh mana prediksi model benar."
+                android:textSize="16sp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Loss: selisih antara prediksi dengan nilai sebenarnya."
+                android:textSize="16sp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

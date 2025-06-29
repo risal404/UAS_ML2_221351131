@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Biru -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/blue"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp">
+
+        <TextView
+            android:text="Fitur"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Isi Konten Scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 1) radius_mean -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="radius_mean"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tipe Data : Float\nBentuk Nilai fitur: Numerik"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Ukuran rata-rata inti sel kanker. Nilai ini penting untuk membedakan sel jinak dan ganas."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 2) perimeter_mean -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="perimeter_mean"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tipe Data : Float\nBentuk Nilai fitur: Numerik"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Nilai rata-rata keliling dari tumor. Ini menunjukkan keliling umum dari batas sel berdasarkan beberapa pengukuran."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 3) area_mean -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="area_mean"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tipe Data : Float\nBentuk Nilai fitur: Numerik"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Luas rata-rata sel kanker. Memberikan gambaran umum tentang seberapa besar ukuran tumor secara keseluruhan."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 4) concavity_mean -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="concavity_mean"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tipe Data : Float\nBentuk Nilai fitur: Numerik"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Rata-rata kedalaman cekungan (concavity) pada kontur luar sel. Cekungan ini menunjukkan ketidakteraturan pada bentuk sel."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 5) concave_points_mean -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="concave_points_mean"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tipe Data : Float\nBentuk Nilai fitur: Numerik"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Rata-rata jumlah titik cekung pada kontur sel. Ini menunjukkan seberapa banyak bagian dari tepi sel yang melengkung ke dalam secara umum."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 6) radius_worst -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="radius_worst"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tipe Data : Float\nBentuk Nilai fitur: Numerik"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Ukuran radius maksimum dari tumor, dihitung sebagai jarak dari pusat ke batas terluar pada 3 ukuran terbesar. Radius sering dikaitkan dengan ukuran keseluruhan massa tumor."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 7) perimeter_worst -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="perimeter_worst"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tipe Data : Float\nBentuk Nilai fitur: Numerik"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Ukuran keliling terbesar dari kontur luar tumor. Menggambarkan seberapa besar atau kompleks bentuk tumor pada ukuran terburuknya."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 8) area_worst -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="area_worst"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tipe Data : Float\nBentuk Nilai fitur: Numerik"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Luas terbesar yang dimiliki oleh sel tumor. Area besar sering mengindikasikan massa yang lebih signifikan."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 9) concavity_worst -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="concavity_worst"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tipe Data : Float\nBentuk Nilai fitur: Numerik"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Nilai maksimum dari kedalaman cekungan, menunjukkan seberapa ekstrem ketidakteraturan bentuk sel pada ukuran terburuknya."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 10) concave_points_worst -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="concave_points_worst"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tipe Data : Float\nBentuk Nilai fitur: Numerik"
+                    android:textSize="14sp"
+                    android:textColor="#444444"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Jumlah titik paling cekung (concave) pada kontur luar sel tumor, diukur dalam 3 ukuran terbesar dari setiap tumor. Nilai ini mewakili seberapa dalam dan banyak lekukan batas sel yang ekstrem."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Biru -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/blue"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp">
+
+        <TextView
+            android:text="Tentang Aplikasi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Konten -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Storyline"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:text="Aplikasi ini dirancang untuk membantu memprediksi potensi Kanker Payudara berdasarkan input data medis pengguna, menggunakan model Machine Learning ANN dengan akurasi tinggi."
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:text="Cara Kerja App"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:text="Aplikasi diagnosis kanker payudara berbasis Android ini dirancang sebagai media informasi dan edukasi mengenai fitur-fitur penting yang digunakan dalam mendeteksi potensi keganasan sel kanker. Saat pengguna membuka aplikasi, mereka akan disambut dengan tampilan antarmuka yang bersih dan informatif, yang terbagi menjadi dua bagian utama, yaitu halaman Dataset dan halaman Fitur. Pada halaman Dataset, pengguna dapat membaca deskripsi singkat mengenai dataset yang digunakan, yang bersumber dari Kaggle. Selain itu, terdapat juga tautan langsung yang mengarahkan pengguna ke dataset aslinya, yaitu Breast Cancer Wisconsin Dataset, yang dikembangkan oleh UCI Machine Learning Repository dan diunggah ke Kaggle. Link tersebut dapat diklik secara langsung karena diformat menggunakan tag HTML dan metode LinkMovementMethod dalam Android."
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:text="Sementara itu, halaman Fitur menampilkan daftar sepuluh fitur terpenting dalam dataset yang berperan besar dalam proses klasifikasi antara sel kanker jinak dan ganas. Fitur-fitur ini telah ditentukan berdasarkan hasil eksplorasi data dan pelatihan model Machine Learning yang terdapat dalam notebook Python (.ipynb). Beberapa contoh fitur tersebut antara lain radius_mean, perimeter_worst, concavity_mean, concave points_worst, dan area_mean. Setiap fitur dijelaskan dalam bentuk kartu yang menampilkan nama fitur, tipe data, bentuk nilai (numerik), serta penjelasan singkat tentang maknanya dalam konteks diagnosis kanker."
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:text="Aplikasi ini dibuat untuk memberikan pemahaman kepada pengguna umum maupun mahasiswa mengenai bagaimana fitur-fitur statistik dari gambar mammogram dapat digunakan dalam proses diagnosis kanker melalui pendekatan Machine Learning. Jika dikembangkan lebih lanjut, aplikasi ini juga dapat menambahkan fitur input data dari pengguna dan menampilkan hasil prediksi diagnosis secara langsung, dengan mengintegrasikan model Machine Learning ke dalam aplikasi menggunakan TensorFlow Lite. Namun untuk versi saat ini, aplikasi ini difokuskan sebagai alat bantu pembelajaran yang menyajikan data secara visual dan terstruktur."
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:text="copyright | @risal404"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

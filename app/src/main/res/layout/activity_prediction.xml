@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Tombol Kembali -->
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Kembali"
+        android:src="@drawable/back"
+        android:scaleType="fitCenter" />
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/button_back"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulai Prediksi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Konten Scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- Input Fields (10 fitur) -->
+            <EditText android:id="@+id/etRadiusMean" android:hint="radius_mean"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/EditTextStyle" />
+
+            <EditText android:id="@+id/etPerimeterMean" android:hint="perimeter_mean"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/EditTextStyle" />
+
+            <EditText android:id="@+id/etAreaMean" android:hint="area_mean"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/EditTextStyle" />
+
+            <EditText android:id="@+id/etConcavityMean" android:hint="concavity_mean"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/EditTextStyle" />
+
+            <EditText android:id="@+id/etConcavePointsMean" android:hint="concave_points_mean"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/EditTextStyle" />
+
+            <EditText android:id="@+id/etRadiusWorst" android:hint="radius_worst"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/EditTextStyle" />
+
+            <EditText android:id="@+id/etPerimeterWorst" android:hint="perimeter_worst"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/EditTextStyle" />
+
+            <EditText android:id="@+id/etAreaWorst" android:hint="area_worst"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/EditTextStyle" />
+
+            <EditText android:id="@+id/etConcavityWorst" android:hint="concavity_worst"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/EditTextStyle" />
+
+            <EditText android:id="@+id/etConcavePointsWorst" android:hint="concave_points_worst"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/EditTextStyle" />
+
+            <!-- Tombol Prediksi -->
+            <Button
+                android:id="@+id/btnPredict"
+                android:text="Prediksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"
+                android:backgroundTint="@color/primaryDark" />
+
+            <!-- Judul Hasil -->
+            <TextView
+                android:layout_marginTop="32dp"
+                android:text="Hasil Prediksi"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Box Hasil -->
+            <LinearLayout
+                android:id="@+id/boxResult"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_result_blue"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Tingkat Keyakinan -->
+            <TextView
+                android:id="@+id/tvConfidence"
+                android:text="Tingkat Keyakinan:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/progressConfidence"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginTop="8dp"
+                android:progressTint="@color/blue" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Breast Cancer App</string>
+    <string name="link_kaggle">
+    Link Dataset : https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data </string>
+</resources>

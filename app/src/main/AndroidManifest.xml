@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.breastcancerapp">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BreastCancerApp"
+        tools:targetApi="31">
+
+        <!-- Halaman Splash (Launcher) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.BreastCancerApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Halaman Menu Utama -->
+        <activity android:name=".MainMenuActivity" />
+
+        <!-- Halaman Tentang Aplikasi -->
+        <activity android:name=".TentangActivity" />
+
+        <!-- Halaman Dataset -->
+        <activity android:name=".DatasetActivity" />
+
+        <!-- Halaman Fitur -->
+        <activity android:name=".FiturActivity" />
+
+        <!-- Halaman Model -->
+        <activity android:name=".ModelActivity" />
+
+        <!-- Halaman Simulasi/Prediksi -->
+        <activity
+            android:name=".PredictionActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Opsional: MainActivity (tidak sebagai launcher) -->
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

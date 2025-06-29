@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Tombol Back -->
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentStart="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Kembali"
+        android:src="@drawable/back"
+        android:scaleType="fitCenter" />
+
+    <!-- Menu -->
+    <TextView
+        android:id="@+id/text_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Menu"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_back"
+        android:padding="60dp"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Menu Item Template -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/bg_menu_item_blue_shadow"
+                android:elevation="6dp"
+                android:gravity="center_vertical"
+                android:onClick="openTentang">
+
+                <ImageView
+                    android:src="@drawable/tentang"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:text="Tentang Aplikasi"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Dataset -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/bg_menu_item_blue_shadow"
+                android:elevation="6dp"
+                android:gravity="center_vertical"
+                android:onClick="openDataset">
+
+                <ImageView
+                    android:src="@drawable/dataset"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:text="Dataset"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Fitur -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/bg_menu_item_blue_shadow"
+                android:elevation="6dp"
+                android:gravity="center_vertical"
+                android:onClick="openFitur">
+
+                <ImageView
+                    android:src="@drawable/fiur"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:text="Fitur"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Model -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/bg_menu_item_blue_shadow"
+                android:elevation="6dp"
+                android:gravity="center_vertical"
+                android:onClick="openModel">
+
+                <ImageView
+                    android:src="@drawable/model"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:text="Model"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Simulasi Model -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/bg_menu_item_blue_shadow"
+                android:elevation="6dp"
+                android:gravity="center_vertical"
+                android:onClick="openSimulasi">
+
+                <ImageView
+                    android:src="@drawable/prediction"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:text="Simulasi Model"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

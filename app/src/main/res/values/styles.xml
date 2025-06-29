@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Style yang Anda tambahkan -->
+    <style name="EditTextStyle">
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+</resources>
